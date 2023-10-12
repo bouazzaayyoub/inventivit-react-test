@@ -1,0 +1,92 @@
+@import "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
+@import "./assets/vendor/glightbox/css/glightbox.css";
+@import "./assets/vendor/remixicon/remixicon.css";
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+  padding-top: 130px;
+  z-index: 3;
+  background-color: white;
+}
+
+.hero h1 {
+  font-size: 22px;
+}
+
+.hero input {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid white;
+  box-shadow: none !important;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+}
+
+.hero input:focus {
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+@media (min-width: 734px) {
+  .hero:after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    background: #80b1b7;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.hero:before {
+  position: absolute;
+  content: "";
+  inset: 0;
+}
+
+.hero .container {
+  z-index: 1;
+}
+
+@media (min-width: 1365px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+.item-text {
+  font-size: 12px !important;
+}
+
+.mobile-nav-show {
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.left-side {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .left-side {
+    display: none;
+  }
+}
+
+button {
+  background-color: #80b1b7;
+  color: white;
+  border: none;
+  border-radius: 14px !important;
+  font-size: 10px !important;
+  font-weight: 700;
+  padding: 12px;
+}
